@@ -1,0 +1,27 @@
+# Developer Configuration
+# Optimized for software development work
+
+[llm]
+aws_region = "us-east-1"  # AWS region for Bedrock (or use AWS_REGION env var)
+model = "anthropic.claude-sonnet-4-20250514-v1:0"
+max_tokens = 8192
+temperature = 0.7
+
+[ui]
+theme = "monokai"  # Good for code-heavy work
+show_token_count = true
+show_elapsed_time = true
+auto_scroll = true
+word_wrap = true
+code_theme = "base16-ocean.dark"
+
+[tools]
+bash_timeout = 60  # Longer timeout for builds
+max_file_size = 2097152  # 2MB - allow reading larger files
+max_output_lines = 1000  # More output for debugging
+
+[keybindings]
+send = "Enter"
+newline = "Shift+Enter"
+cancel = "Ctrl+C"
+clear = "Ctrl+L"

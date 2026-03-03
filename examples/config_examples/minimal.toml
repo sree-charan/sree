@@ -1,0 +1,7 @@
+# Minimal Configuration
+# Just the essentials to get started
+
+[llm]
+# AWS region for Bedrock (or use AWS_REGION environment variable)
+aws_region = "us-east-1"
+model = "anthropic.claude-sonnet-4-20250514-v1:0"

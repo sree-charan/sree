@@ -1,0 +1,31 @@
+# Power User Configuration
+# All available options with explanations
+
+[llm]
+# AWS Bedrock Configuration
+aws_region = "us-east-1"  # AWS region for Bedrock (or use AWS_REGION env var)
+model = "anthropic.claude-sonnet-4-20250514-v1:0"  # Bedrock model ID
+max_tokens = 8192  # Maximum tokens in response (1024-8192)
+temperature = 0.7  # Randomness (0.0-1.0, lower = more focused)
+
+[ui]
+# Visual Settings
+theme = "dracula"  # dark, light, monokai, dracula, nord, solarized
+show_token_count = true  # Display token usage in status bar
+show_elapsed_time = true  # Show time for each operation
+auto_scroll = true  # Auto-scroll to new messages
+word_wrap = true  # Wrap long lines
+code_theme = "base16-ocean.dark"  # Syntax highlighting theme
+
+[tools]
+# Tool Execution Settings
+bash_timeout = 30  # Command timeout in seconds
+max_file_size = 1048576  # Max file size to read (1MB)
+max_output_lines = 500  # Max lines of output to display
+
+[keybindings]
+# Keyboard Shortcuts
+send = "Enter"  # Send message
+newline = "Shift+Enter"  # Insert newline
+cancel = "Ctrl+C"  # Cancel operation
+clear = "Ctrl+L"  # Clear screen
